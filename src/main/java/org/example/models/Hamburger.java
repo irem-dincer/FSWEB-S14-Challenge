@@ -41,37 +41,9 @@ private String breadRollType;
         this.price = price;
     }
 
-    public double getPrice() {
-        double totalPrice = this.price;
-
-        if(addition1Name != null) {
-            totalPrice += addition1Price;
-        }
-        if(addition2Name != null) {
-            totalPrice += addition2Price;
-        }
-        if(addition3Name != null) {
-            totalPrice += addition3Price;
-        }
-        if(addition4Name != null) {
-            totalPrice += addition4Price;
-        }
-
-        return totalPrice;  // Toplam fiyat (hamburger + eklentiler)
-    }
-
-    public void setBreadRollType(String breadRollType) {
-        this.breadRollType = breadRollType;
-    }
-
-    public String getBreadRollType() {
-        return this.breadRollType;
-    }
-
-
     public void  addHamburgerAddition1(String addition1Name, double addition1Price){
-this.addition1Name=addition1Name;
-this.addition1Price=addition1Price;
+        this.addition1Name=addition1Name;
+        this.addition1Price=addition1Price;
         System.out.println("extra: "+addition1Name+" price:"+addition1Price);
     }
     public void  addHamburgerAddition2(String addition2Name,double addition2Price){
@@ -114,6 +86,33 @@ this.addition1Price=addition1Price;
         }
 
         return "Hamburger: " + this.getName() + " Hamburger + Tüm malzemeler: " + totalPrice;
+    }
+
+    public double getPrice() {
+        double totalPrice = this.price;
+
+        if(addition1Name != null) {
+            totalPrice += addition1Price;
+        }
+        if(addition2Name != null) {
+            totalPrice += addition2Price;
+        }
+        if(addition3Name != null) {
+            totalPrice += addition3Price;
+        }
+        if(addition4Name != null) {
+            totalPrice += addition4Price;
+        }
+
+        return totalPrice;  // Toplam fiyat (hamburger + eklentiler)
+    }
+
+    public void setBreadRollType(String breadRollType) {
+        this.breadRollType = breadRollType;
+    }
+
+    public String getBreadRollType() {
+        return this.breadRollType;
     }
 
 }

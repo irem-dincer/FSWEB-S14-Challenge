@@ -4,7 +4,7 @@ public class DeluxeBurger extends  Hamburger{
 private  String cips;
 private  String drink;
 
-public DeluxeBurger(String name, String meat,String breadRollType){ //parametrede neden price yok
+public DeluxeBurger(String name, String meat,String breadRollType){
     super(name,meat,19.10,breadRollType);
     this.cips="CURVY";
     this.drink="COKE";

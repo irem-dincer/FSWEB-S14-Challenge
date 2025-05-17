@@ -11,9 +11,6 @@ public HealthyBurger(String name,double price,String breadType){
     super(name,"Tofu",price,breadType);
 
 }
-    public HealthyBurger(String name, double price) {
-        super(name, "tofu", price, "Brown rye");
-    }
 
 public void addHealthyAddition1(String healthyExtra1Name, double healthyExtra1Price){
     this.healthyExtra1Name=healthyExtra1Name;
