@@ -26,7 +26,7 @@ public DeluxeBurger(String name, String meat,String breadRollType){
     }
 
 
-@Override
+    @Override
 public void addHamburgerAddition1(String addition1Name, double addition1Price) {
 
     System.out.println("\nDeluxe Burger için yeni malzeme eklenemez.");

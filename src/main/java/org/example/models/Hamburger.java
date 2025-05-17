@@ -40,6 +40,13 @@ private String breadRollType;
     public void setPrice(double price) {
         this.price = price;
     }
+    public void setBreadRollType(String breadRollType) {
+        this.breadRollType = breadRollType;
+    }
+
+    public String getBreadRollType() {
+        return this.breadRollType;
+    }
 
     public void  addHamburgerAddition1(String addition1Name, double addition1Price){
         this.addition1Name=addition1Name;
@@ -107,13 +114,7 @@ private String breadRollType;
         return totalPrice;  // Toplam fiyat (hamburger + eklentiler)
     }
 
-    public void setBreadRollType(String breadRollType) {
-        this.breadRollType = breadRollType;
-    }
 
-    public String getBreadRollType() {
-        return this.breadRollType;
-    }
 
 }
 
